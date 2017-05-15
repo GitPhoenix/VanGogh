@@ -160,7 +160,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                         .countable(true)//若开启裁剪，则无效
                         .maxCount(9)
                         .rowCount(3)
-                        .cameraVisible(true, getPackageName())//第一个参数为FALSE时，第二个参数无效
+                        .cameraVisible(true, getPackageName())//设置在第一个参数为FALSE时，第二个参数无效
                         .withResultSize(1024, 1024)
                         .cropEnable(false, VanCropType.CROP_TYPE_RECTANGLE)//第一个参数为TRUE时，则可选中数量被设为1，此时maxSelectable(9)无效；第一个参数为FALSE时，第二个参数无效
                         .theme(R.style.VanTheme_Dracula)

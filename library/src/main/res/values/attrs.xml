@@ -20,7 +20,7 @@
     <attr name="vanEmptyDrawable" format="reference"/>
     <attr name="vanEmptyText" format="reference|color"/>
 
-    <!--底部导航栏，按钮字体大小-->
+    <!--底部按钮【预览/确定】，按钮字体大小-->
     <attr name="vanNavigationSize" format="reference|dimension"/>
     <!--底部按钮-->
     <attr name="vanNavigationBackground" format="reference|color"/>

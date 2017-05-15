@@ -33,32 +33,52 @@
     </style>
 
     <style name="VanTheme.Dracula">
+        //标题栏背景色
         <item name="colorPrimary">@color/draculaPrimary</item>
+        //状态栏颜色
         <item name="colorPrimaryDark">@color/draculaPrimaryDark</item>
+        //裁剪页面按钮颜色
         <item name="colorAccent">@color/draculaColorAccent</item>
 
+        //标题栏高度，默认自适应系统高度
         <item name="android:actionBarSize">52dp</item>
+        //页面切换动画，默认为系统动画
         <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
 
+        //选择图片集合时的指示Icon
         <item name="vanSpinnerIcon">@drawable/van_spinner_down</item>
+        //页面返回按钮指示Icon
         <item name="vanNavigationIcon">@drawable/van_chevron_left</item>
 
+        //标题字体颜色
         <item name="VanTextColorPrimary">@color/draculaTextColorPrimary</item>
+        //标题字体大小
         <item name="vanTitleSize">@dimen/van_sp_title</item>
+        //页面背景色
         <item name="vanWindowBackground">@color/draculaWindowBackground</item>
 
+        //选择图片集合显示图片数量字体颜色
         <item name="vanSpinnerCount">@color/draculaSpinnerCount</item>
+        //PopupWindow背景色
         <item name="vanSpinnerPopupWindowStyle">@style/Popup.Dracula</item>
 
+        //没有图片时友好提示图片
         <item name="vanEmptyDrawable">@drawable/van_empty_dracula</item>
+        //没有图片时友好提示文字
         <item name="vanEmptyText">@color/draculaEmptyText</item>
 
+        //底部按钮字体大小
         <item name="vanNavigationSize">@dimen/van_sp_navigation</item>
+        //底部背景色
         <item name="vanNavigationBackground">@color/draculaNavigationBackground</item>
+        //【预览】字体颜色
         <item name="vanNavigationPreview">@color/draculaNavigationPreview</item>
+        //【确定】字体颜色
         <item name="vanNavigationApply">@color/draculaNavigationApply</item>
 
+        //图片展示界面显示【拍照】时背景色
         <item name="vanCameraBackground">@color/draculaCameraBackground</item>
+        //【拍照】字体颜色
         <item name="vanCamera">@color/draculaCamera</item>
     </style>
 
