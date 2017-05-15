@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupWindow.Spinner" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@color/vanPrimary</item>
+    </style>
+
+    <!--VanGogh默认属性：18个-->
+    <style name="VanTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/vanPrimary</item>
+        <item name="colorPrimaryDark">@color/vanPrimaryDark</item>
+        <item name="colorAccent">@color/vanColorAccent</item>
+
+        <item name="vanSpinnerIcon">@drawable/van_spinner_down</item>
+        <item name="vanNavigationIcon">@drawable/van_chevron_left</item>
+
+        <item name="VanTextColorPrimary">@color/vanTextColorPrimary</item>
+        <item name="vanTitleSize">@dimen/van_sp_title</item>
+        <item name="vanWindowBackground">@color/vanWindowBackground</item>
+
+        <item name="vanSpinnerCount">@color/vanSpinnerCount</item>
+        <item name="vanSpinnerPopupWindowStyle">@style/PopupWindow.Spinner</item>
+
+        <item name="vanEmptyDrawable">@drawable/van_empty_dracula</item>
+        <item name="vanEmptyText">@color/vanEmptyText</item>
+
+        <item name="vanNavigationSize">@dimen/van_sp_navigation</item>
+        <item name="vanNavigationBackground">@color/vanNavigationBackground</item>
+        <item name="vanNavigationPreview">@color/vanNavigationPreview</item>
+        <item name="vanNavigationApply">@color/vanNavigationApply</item>
+
+        <item name="vanCameraBackground">@color/vanCameraBackground</item>
+        <item name="vanCamera">@color/vanCamera</item>
+    </style>
+
+</resources>

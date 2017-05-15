@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <com.alley.van.widget.PreviewViewPager
+        android:id="@+id/viewPager_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"/>
+
+    <FrameLayout
+        android:id="@+id/fl_preview_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/vanPreviewNavigationBackground"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tv_preview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/van_navigation_back"
+            android:textColor="@android:color/white"
+            android:textSize="?attr/vanNavigationSize"/>
+
+        <TextView
+            android:id="@+id/tv_preview_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/vanPreviewNavigationSize"
+            android:textSize="?attr/vanNavigationSize"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_preview_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:foreground="?selectableItemBackground"
+            android:padding="16dp"
+            android:textColor="?attr/vanNavigationApply"
+            android:textSize="?attr/vanNavigationSize"/>
+
+    </FrameLayout>
+
+    <com.alley.van.widget.CheckView
+        android:id="@+id/check_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

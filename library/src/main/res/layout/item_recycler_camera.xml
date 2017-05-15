@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alley.van.widget.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?vanCameraBackground"
+    android:foreground="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tv_recycler_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/van_camera_white_24dp"
+        android:gravity="center"
+        android:text="@string/van_camera"
+        android:textColor="?vanCamera"
+        android:textSize="14sp"/>
+
+</com.alley.van.widget.SquareFrameLayout>

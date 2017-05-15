@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--VanGogh属性：15个-->
+    <attr name="vanSpinnerIcon" format="reference"/>
+    <!--返回指示箭头-->
+    <attr name="vanNavigationIcon" format="reference"/>
+
+    <!--标题字体颜色-->
+    <attr name="VanTextColorPrimary" format="reference|color"/>
+    <!--标题字体大小-->
+    <attr name="vanTitleSize" format="reference|dimension"/>
+    <!--页面背景色-->
+    <attr name="vanWindowBackground" format="reference|color"/>
+
+    <attr name="vanSpinnerCount" format="reference|color"/>
+    <!--spinner PopupWindow背景-->
+    <attr name="vanSpinnerPopupWindowStyle" format="reference"/>
+
+    <!--设备无资源时，显示图片及提示文字颜色-->
+    <attr name="vanEmptyDrawable" format="reference"/>
+    <attr name="vanEmptyText" format="reference|color"/>
+
+    <!--底部导航栏，按钮字体大小-->
+    <attr name="vanNavigationSize" format="reference|dimension"/>
+    <!--底部按钮-->
+    <attr name="vanNavigationBackground" format="reference|color"/>
+    <attr name="vanNavigationPreview" format="reference|color"/>
+    <attr name="vanNavigationApply" format="reference|color"/>
+
+    <!--camera-->
+    <attr name="vanCameraBackground" format="reference|color"/>
+    <attr name="vanCamera" format="reference|color"/>
+
+</resources>

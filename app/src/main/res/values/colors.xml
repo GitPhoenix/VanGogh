@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparentHalf">#8F000000</color>
+
+    <color name="list_bg">#3B3B3B</color>
+    <!--item 按下时的背景色-->
+    <color name="default_item_pressed_bg">#dedfe0</color>
+    <!--分割线的颜色-->
+    <color name="default_divider_line">#efefef</color>
+    <!--应用中常规字体颜色-->
+    <color name="default_text_color_normal">#333333</color>
+
+    <!--vanTheme 12个颜色-->
+    <color name="draculaPrimary">#263237</color>
+    <color name="draculaPrimaryDark">#1D282C</color>
+    <color name="draculaTextColorPrimary">#DEFFFFFF</color>
+    <color name="draculaColorAccent">#FF4081</color>
+    <color name="draculaWindowBackground">#232E32</color>
+    <color name="draculaSpinnerCount">#89FFFFFF</color>
+    <color name="draculaEmptyText">#4DFFFFFF</color>
+    <color name="draculaCameraBackground">#EAEEF4</color>
+    <color name="draculaCamera">#333333</color>
+    <color name="draculaNavigationBackground">#34474E</color>
+    <color name="draculaNavigationPreview">#333333</color>
+    <color name="draculaNavigationApply">#FF4081</color>
+    <!--vanTheme-->
+</resources>

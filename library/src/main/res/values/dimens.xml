@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="van_recycler_size">48dp</dimen>
+    <dimen name="van_recycler_spacing">4dp</dimen>
+    <dimen name="van_recycler_item_height">72dp</dimen>
+
+    <dimen name="van_sp_title">20sp</dimen>
+    <dimen name="van_sp_navigation">16sp</dimen>
+</resources>

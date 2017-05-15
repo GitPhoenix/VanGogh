@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    </style>
+
+    <!--对话框弹出window背景变暗-->
+    <style name="Dialog" parent="Base.Animation.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--对话框从下向上弹出动画-->
+    <style name="Dialog.Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <!--所有Activity进入退出过度动画配置-->
+    <style name="ActivityAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+    </style>
+
+    <style name="VanTheme.ActivityAnimation">
+        <item name="android:actionBarSize">52dp</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    </style>
+
+    <style name="VanTheme.Dracula">
+        <item name="colorPrimary">@color/draculaPrimary</item>
+        <item name="colorPrimaryDark">@color/draculaPrimaryDark</item>
+        <item name="colorAccent">@color/draculaColorAccent</item>
+
+        <item name="android:actionBarSize">52dp</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+
+        <item name="vanSpinnerIcon">@drawable/van_spinner_down</item>
+        <item name="vanNavigationIcon">@drawable/van_chevron_left</item>
+
+        <item name="VanTextColorPrimary">@color/draculaTextColorPrimary</item>
+        <item name="vanTitleSize">@dimen/van_sp_title</item>
+        <item name="vanWindowBackground">@color/draculaWindowBackground</item>
+
+        <item name="vanSpinnerCount">@color/draculaSpinnerCount</item>
+        <item name="vanSpinnerPopupWindowStyle">@style/Popup.Dracula</item>
+
+        <item name="vanEmptyDrawable">@drawable/van_empty_dracula</item>
+        <item name="vanEmptyText">@color/draculaEmptyText</item>
+
+        <item name="vanNavigationSize">@dimen/van_sp_navigation</item>
+        <item name="vanNavigationBackground">@color/draculaNavigationBackground</item>
+        <item name="vanNavigationPreview">@color/draculaNavigationPreview</item>
+        <item name="vanNavigationApply">@color/draculaNavigationApply</item>
+
+        <item name="vanCameraBackground">@color/draculaCameraBackground</item>
+        <item name="vanCamera">@color/draculaCamera</item>
+    </style>
+
+    <style name="Popup.Dracula" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@color/draculaPrimary</item>
+    </style>
+
+</resources>

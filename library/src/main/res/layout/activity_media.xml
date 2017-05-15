@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="4dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_media"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:contentInsetLeft="16dp"
+            app:contentInsetRight="16dp"
+            app:navigationIcon="?attr/vanNavigationIcon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/van_media_title"
+                android:textColor="?attr/VanTextColorPrimary"
+                android:textSize="?attr/vanTitleSize"/>
+
+            <TextView
+                android:id="@+id/tv_media_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="?attr/vanNavigationApply"
+                android:textSize="?attr/vanNavigationSize"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_media_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/vanNavigationBackground"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tv_media_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="?attr/vanSpinnerIcon"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textColor="?attr/vanNavigationApply"
+            android:textSize="?attr/vanNavigationSize"/>
+
+        <TextView
+            android:id="@+id/tv_media_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:foreground="?selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/van_navigation_preview"
+            android:textColor="?attr/vanNavigationPreview"
+            android:textSize="?attr/vanNavigationSize"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_media_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fl_media_navigation"
+        android:layout_below="@id/AppBarLayout_media"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/fl_media_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fl_media_navigation"
+        android:layout_below="@id/AppBarLayout_media"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:drawableTop="?attr/vanEmptyDrawable"
+            android:gravity="center"
+            android:text="@string/van_empty_text"
+            android:textColor="?attr/vanEmptyText"
+            android:textSize="16sp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

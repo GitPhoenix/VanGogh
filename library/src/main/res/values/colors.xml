@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vanPreviewNavigationBackground">#CC000000</color>
+    <color name="vanPreviewNavigationSize">#61FFFFFF</color>
+
+    <!--vanTheme 12个颜色-->
+    <color name="vanPrimary">#f8f8f8</color>
+    <color name="vanPrimaryDark">#c4c4c4</color>
+    <color name="vanTextColorPrimary">#333333</color>
+    <color name="vanColorAccent">#d2b167</color>
+    <color name="vanWindowBackground">#ffffffff</color>
+    <color name="vanSpinnerCount">#999999</color>
+    <color name="vanEmptyText">#999999</color>
+    <color name="vanCameraBackground">#EAEEF4</color>
+    <color name="vanCamera">#333333</color>
+    <color name="vanNavigationBackground">#f8f8f8</color>
+    <color name="vanNavigationPreview">#333333</color>
+    <color name="vanNavigationApply">#d2b167</color>
+    <!--vanTheme-->
+</resources>

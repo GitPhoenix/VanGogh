@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_dialog_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_18"
+        android:background="@drawable/selector_item_bg"
+        android:gravity="center"
+        android:textColor="@color/default_text_color_normal"
+        android:padding="@dimen/dp_16"/>
+
+</LinearLayout>
