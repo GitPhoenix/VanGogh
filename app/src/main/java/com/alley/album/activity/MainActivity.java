@@ -259,7 +259,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.CHINA);
         String imageFileName = "IMG_" + dateFormat.format(new Date());
 
-        Uri uri = Uri.fromFile(new File(getCacheDir(), imageFileName.concat(".png")));
+        Uri uri = Uri.fromFile(new File(getCacheDir(), imageFileName.concat(".jpeg")));
         UCrop.of(source, uri)
                 .withAspectRatio(1, 1)
                 .withMaxResultSize(1024, 1024)

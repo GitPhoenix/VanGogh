@@ -332,9 +332,9 @@ public class VanMediaActivity extends BaseVanActivity implements AlbumCollection
      */
     private void startCropActivity(Uri source) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.CHINA);
-        String cacheFileName = "CROP_" + dateFormat.format(new Date());
+        String cacheFileName = "IMG_" + dateFormat.format(new Date());
 
-        Uri uri = Uri.fromFile(new File(getCacheDir(), cacheFileName + ".png"));
+        Uri uri = Uri.fromFile(new File(getCacheDir(), cacheFileName + ".jpeg"));
         UCrop.of(source, uri)
                 .withAspectRatio(1, 1)
                 .withMaxResultSize(VanConfig.getInstance().cropWidth, VanConfig.getInstance().cropHeight)

@@ -144,7 +144,7 @@ public final class VanConfig {
         String imageFileName = "IMG_" + dateFormat.format(new Date());
 
         File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-        return new File(storageDir + File.separator + imageFileName + ".png");
+        return new File(storageDir + File.separator + imageFileName + ".jpeg");
     }
 
     public Uri getCurrentPhotoPath() {

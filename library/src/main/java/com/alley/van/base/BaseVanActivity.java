@@ -3,12 +3,12 @@ package com.alley.van.base;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.alley.van.R;
 import com.alley.van.model.VanConfig;
-import com.alley.van.util.ResUtils;
 import com.alley.van.util.VanBarManager;
 
 
@@ -28,10 +28,11 @@ public abstract class BaseVanActivity extends AppCompatActivity {
         TypedArray ta = getTheme().obtainStyledAttributes(new int[]{
                 R.attr.colorPrimaryDark
         });
-        int color = ta.getColor(0, ResUtils.getColor(getApplicationContext(), R.color.vanPrimaryDark));
+        int color = ta.getColor(0, ContextCompat.getColor(getApplicationContext(), R.color.vanPrimaryDark));
         ta.recycle();
         VanBarManager barManager = new VanBarManager(this);
-        barManager.setStatusBarColor(false, color);
+        barManager.setStatusBarColor(color);
+        barManager.setFitSystemWindows(true);
 
         super.onCreate(savedInstanceState);
         setContentView(getLayoutID());

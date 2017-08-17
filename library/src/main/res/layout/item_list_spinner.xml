@@ -4,7 +4,7 @@
                 android:layout_height="@dimen/van_recycler_item_height"
                 android:foreground="?selectableItemBackground">
 
-    <com.alley.van.widget.RoundedRectangleImageView
+    <ImageView
         android:id="@+id/album_cover"
         android:layout_width="40dp"
         android:layout_height="40dp"

@@ -27,8 +27,6 @@ android {
 }
 
 dependencies {
-    final VAN_SUPPORT_LIBRARY_VERSION = "25.3.0"
-
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -48,7 +46,7 @@ publish {
     userOrg = 'alina'//bintray.com用户名
     groupId = 'com.alley'//jcenter上的路径
     artifactId = 'VanGogh'//项目名称
-    publishVersion = '1.3.0'//版本号
+    publishVersion = '1.3.3'//版本号
     desc = '拍照、从相册选择'//描述，不重要
-    website = 'https://github.com/GitPhoenix'//网站
+    website = 'https://github.com/GitPhoenix/VanGogh'//网站
 }
