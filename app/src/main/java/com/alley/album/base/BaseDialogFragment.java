@@ -121,11 +121,6 @@ public abstract class BaseDialogFragment extends DialogFragment {
     protected abstract void initEvent();
 
     /**
-     * 当对话框消失时的监听事件
-     */
-    protected abstract void onCancel();
-
-    /**
      * 监听返回键
      */
     private void onBackPressed() {
@@ -139,14 +134,7 @@ public abstract class BaseDialogFragment extends DialogFragment {
         getDialog().setOnKeyListener(new DialogInterface.OnKeyListener() {
             @Override
             public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-                    if (isBack) {
-                        onCancel();
-                    }
-                    return !isBack;
-                }
-
-                return false;
+                return keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN && !isBack;
             }
         });
     }

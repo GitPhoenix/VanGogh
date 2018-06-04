@@ -100,11 +100,6 @@ public class ItemDialogFragment extends BaseDialogFragment implements View.OnCli
     }
 
     @Override
-    protected void onCancel() {
-
-    }
-
-    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_dialog_item_cancel:

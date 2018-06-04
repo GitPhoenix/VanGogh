@@ -220,6 +220,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         String filePath = resultUri.getEncodedPath();
         String imagePath = Uri.decode(filePath);
 
+        Log.i("body", "resultUri=" + resultUri + "\nfilePath=" + filePath + "\nimagePath=" + imagePath);
         if (resultUri == null) {
             return;
         }
@@ -271,8 +272,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private void display(Uri uri) {
         Glide.with(this)
                 .load(uri)
-                .asBitmap()  // some .jpeg files are actually gif
-                .centerCrop()
                 .into(ivDisplay);
     }
 
